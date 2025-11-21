@@ -13,7 +13,7 @@ export function TrackingPage({cart}) {
   
   useEffect(()=>{
     const getTrackingPageData = async ()=>{
-      const response = await axios.get(`/api/orders/${orderId}?expand=products`)
+      const response = await axios.get(`https://react-ecom-backend-a19y.onrender.com/api/orders/${orderId}?expand=products`)
         setOrder(response.data);
   }
 

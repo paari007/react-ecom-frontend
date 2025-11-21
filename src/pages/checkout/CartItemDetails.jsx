@@ -9,7 +9,7 @@ export function CartItemDetails({ cartItem, loadCart }) {
 
   const updateQuantity = async () => {
     if (isUpdatingQuantity) {
-      await axios.put(`/api/cart-items/${cartItem.productId}`, {
+      await axios.put(`https://react-ecom-backend-a19y.onrender.com/api/cart-items/${cartItem.productId}`, {
         quantity: Number(quantity),
       });
       await loadCart();
@@ -35,7 +35,7 @@ export function CartItemDetails({ cartItem, loadCart }) {
   };
 
   const deleteCartItem = async () => {
-    await axios.delete(`api/cart-items/${cartItem.productId}`);
+    await axios.delete(`https://react-ecom-backend-a19y.onrender.com/api/cart-items/${cartItem.productId}`);
     await loadCart();
   };
   return (

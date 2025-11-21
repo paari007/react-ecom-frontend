@@ -13,7 +13,7 @@ export function OrdersDetailsGrid({order,loadCart}) {
       {order.products.map((orderProduct) => {
 
       const addToCart = async()=>{
-          await axios.post('/api/cart-items',{
+          await axios.post('https://react-ecom-backend-a19y.onrender.com/api/cart-items',{
             productId: orderProduct.product.id,
             quantity: 1
           });

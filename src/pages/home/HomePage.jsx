@@ -14,7 +14,7 @@ export function HomePage({cart,loadCart}) {
   useEffect( () => {
     
     const getHomeData = async()=>{
-         const urlPath = search ? `/api/products?search=${search}` : '/api/products';
+         const urlPath = search ? `https://react-ecom-backend-a19y.onrender.com/api/products?search=${search}` : '/api/products';
          const response = await axios.get(urlPath);
         setProducts(response.data )
     };

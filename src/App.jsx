@@ -17,7 +17,7 @@ function App() {
 
 
   const loadCart = async()=>{
-    const response = await axios.get('/api/cart-items?expand=product');
+    const response = await axios.get('https://react-ecom-backend-a19y.onrender.com/api/cart-items?expand=product');
      setCart(response.data)
   };
 
