@@ -8,16 +8,6 @@ export default defineConfig({
       plugins: [['babel-plugin-react-compiler', { target: '19' }]],
     },
   })],
-  server: {
-    proxy: {
-      '/api': {
-        target: 'https://react-ecom-backend-a19y.onrender.com'
-      },
-      '/images': {
-        target: 'https://react-ecom-backend-a19y.onrender.com'
-      }
-    }
-  },
   build: {
     outDir: 'dist'
   }
