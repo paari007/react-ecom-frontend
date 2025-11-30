@@ -39,7 +39,7 @@ export function Header({cart}) {
       </div>
 
       <div className="middle-section">
-        <input value={search} onChange={updateSearchInput} className="search-bar" type="text" placeholder="Search" />
+        <input  value={search} onChange={updateSearchInput} className="search-bar" type="text" placeholder="Search" />
 
         <button onClick={searchProducts}  className="search-button">
           <img className="search-icon" src={SearchIcon} />

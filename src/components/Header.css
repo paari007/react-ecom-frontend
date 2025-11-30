@@ -164,3 +164,22 @@
   width: 26px;
   text-align: center;
 }
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.loader-icon {
+  width: 50px;
+  height: 50px;
+  color: #555;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
